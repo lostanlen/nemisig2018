@@ -1,0 +1,458 @@
+!!!COM: Mozart, Wolfgang Amadeus
+!!!OPR: Quartet in G Major
+!!!OTL: Tempo di Menuetto
+!!!OMV: 3
+!!!SCT: K 156
+!!!SCA: Chronologisch-thematisches Verzeichnis sämtlicher Tonwerke Wolfgang Amade Mozarts (L. von Köchel; 1862, 2/1905, 3/1937, 1947)
+!!!YOR: Breitkopf & Härtel Edition
+!!!EED: Edmund Correia, Jr.
+!!!ENC: Edmund Correia, Jr.
+!!!CDT: 1756/1/27/-1791/12/5/
+!!!OCY: Österreich
+!!!YEC: Copyright (c) 1994, 2000 Center for Computer Assisted Research in the Humanities
+!!!YEM: Rights to all derivative editions reserved.
+!!!YEM: Refer to licensing agreement for further details.
+!!!YEN: United States of America
+**kern	**kern	**kern	**kern
+*I:Violino 1	*I:Violino 2	*I:Viola	*I:Violoncello
+*>[A,A,B,B,C,C,D,D,E]	*>[A,A,B,B,C,C,D,D,E]	*>[A,A,B,B,C,C,D,D,E]	*>[A,A,B,B,C,C,D,D,E]
+*>A	*>A	*>A	*>A
+*clefG2	*clefG2	*clefC3	*clefF4
+*k[f#]	*k[f#]	*k[f#]	*k[f#]
+*G:	*G:	*G:	*G:
+*M3/4	*M3/4	*M3/4	*M3/4
+! Tempo di Menuetto	! Tempo di Menuetto	! Tempo di Menuetto	! Tempo di Menuetto
+*tb32	*tb32	*tb32	*tb32
+=1-	=1-	=1-	=1-
+2ggxx 2b 2d 2G	2.r	4gxx	2.r
+.	.	4G	.
+(16ff#	.	4r	.
+16ee	.	.	.
+16dd	.	.	.
+16cc)	.	.	.
+=2	=2	=2	=2
+(4cc	2.r	4r	2Gxx
+4b)	.	4b	.
+4cc'	.	(16a	(16F#
+.	.	16g	16E
+.	.	16f#	16D
+.	.	16e)	16C)
+=3	=3	=3	=3
+2dd	2gxx	4d	(4C
+.	.	4r	4BB)
+(16dd	(16f#	4r	4C
+16cc	16e	.	.
+16b	16d	.	.
+16a)	16c)	.	.
+=4	=4	=4	=4
+(4g	(4B	4r	2D
+8f#)	4A)	4d	.
+8a'	.	.	.
+8a'	4r	4D	4r
+8a'	.	.	.
+=5	=5	=5	=5
+4.a	4r	4r	2.r
+.	(4e	(4c	.
+(8cc	.	.	.
+8b	4f#)	4d)	.
+8a)	.	.	.
+=6	=6	=6	=6
+(4a	(4f#	2G	2.r
+8b)	4g)	.	.
+(8g	.	.	.
+8d	4r	4r	.
+8B)	.	.	.
+=7	=7	=7	=7
+4.A	2.r	4r	4r
+.	.	(4E	(4C
+(8c	.	.	.
+8B	.	4F#)	4D)
+8A)	.	.	.
+=8	=8	=8	=8
+4G	4r	4G	4GG
+4bb	4dd	4r	4r
+(16aa	(16cc	4r	4r
+16gg	16b	.	.
+16ff#	16a	.	.
+16ee)	16g)	.	.
+=9	=9	=9	=9
+*	*^	*	*
+(4dd	(4f#	2ryy	2.r	4r
+4cc#)	4e)	.	.	4A
+8.ddT	4a	4f#	.	(16G
+.	.	.	.	16F#
+.	.	.	.	16E
+32cc#	.	.	.	16D)
+32dd	.	.	.	.
+=10	=10	=10	=10	=10
+4ee	4a	4g	4r	4C#
+8r	8r	2ryy	4e	4AA
+8aa'	8a'	.	.	.
+8bb'	8b'	.	(16d	4G
+.	.	.	16c#	.
+8ccc#'	8cc#'	.	16B	.
+.	.	.	16A)	.
+=11	=11	=11	=11	=11
+*	*v	*v	*	*
+(8.ddd	(8.dd	(8.a	4F#
+16aak	16ak	16f#k	.
+8ff#)	8f#)	8d)	4r
+8ff#'	8f#'	8d'	.
+8gg'	8g'	8e'	4r
+8aa'	8a'	8f#'	.
+=12	=12	=12	=12
+(8.bb	(8.b	(8.g	4G
+16ggk	16gk	16ek	.
+8ee)	8e)	8B)	8r
+8ee'	8e'	8c#'	8G
+8ff#'	8f#'	8d'	8F#
+8gg'	8g'	8e'	8E
+=13	=13	=13	=13
+*^	*	*	*
+(4ff#	4a	(4a	4d	4D
+4aa)	4a	4f#)	4A	4F#
+(16aa	4ryy	(16f#	4A	4A
+16gg	.	16e	.	.
+16ff#	.	16d	.	.
+16ee)	.	16c#)	.	.
+=14	=14	=14	=14	=14
+*v	*v	*	*	*
+4dd	4d	2d	4d
+4r	4r	.	4D
+!	!	! 16gP/	!
+4r	4r	8f#	4r
+.	.	16e	.
+.	.	16d	.
+=15:!!:	=15:!!:	=15:!!:	=15:!!:
+*>B	*>B	*>B	*>B
+2dd	2.r	2.ccn	2.r
+! 16ggP/	!	!	!
+8ff#	.	.	.
+16ee	.	.	.
+16dd	.	.	.
+=16	=16	=16	=16
+2.cccn	2.r	2.a	2D
+!	!	!	! 16GP/
+.	.	.	8F#
+.	.	.	16E
+.	.	.	16D
+=17	=17	=17	=17
+2.aa	2d	2.f#	2.cn
+!	! 16gP/	!	!
+.	8f#	.	.
+.	16e	.	.
+.	16d	.	.
+=18	=18	=18	=18
+2.ff#	2.ccn	2d	2.A
+!	!	! 16gP/	!
+.	.	8f#	.
+.	.	16e	.
+.	.	16d	.
+=19	=19	=19	=19
+4dd'	4a'	4cc'	4F#'
+4dd'	4a'	4cc'	4F#'
+4dd'	4a'	4cc'	4F#'
+=20	=20	=20	=20
+4dd'	4g'	4b'	4G'
+8r	4r	4r	4r
+(8dd	.	.	.
+8cc	4r	4r	4r
+8b)	.	.	.
+=21	=21	=21	=21
+4a	4g	4e	4C
+(8.a	4g	4e	4C
+16bk)	.	.	.
+(8.a	4g	4e	4C#
+16bk)	.	.	.
+=22	=22	=22	=22
+4a	4f#	4d	4D
+8r	4r	4r	4r
+(8d	.	.	.
+8c	4r	4r	4r
+8B)	.	.	.
+=23	=23	=23	=23
+4A	2.r	(8G	4C#
+.	.	8E)	.
+(8.A	.	(8G	4C#
+.	.	8E)	.
+16Bk)	.	.	.
+(8.A	.	(8G	4C#
+.	.	8E)	.
+16Bk)	.	.	.
+=24	=24	=24	=24
+4A	2dd 2d	4F#	4D
+4r	.	4r	4r
+4r	(16dd	4r	4r
+.	16cc	.	.
+.	16b	.	.
+.	16a)	.	.
+=25	=25	=25	=25
+2ggxx 2b 2d 2G	4g	4g	2.r
+.	4r	4G	.
+(16ff#	4r	4r	.
+16ee	.	.	.
+16dd	.	.	.
+16cc)	.	.	.
+=26	=26	=26	=26
+(4cc	2.r	4r	2G
+4b)	.	4b	.
+4cc'	.	(16a	(16F#
+.	.	16g	16E
+.	.	16f#	16D
+.	.	16e)	16Cn)
+=27	=27	=27	=27
+2dd	2g	4d	(4C
+.	.	4r	4BB)
+(16dd	(16f#	4r	4C'
+16cc	16e	.	.
+16b	16d	.	.
+16a)	16c)	.	.
+=28	=28	=28	=28
+(4g	(4B	4r	4D
+8f#)	4A)	4d	4r
+8a'	.	.	.
+8a'	4r	4D	4r
+8a'	.	.	.
+=29	=29	=29	=29
+4.a	4r	4r	2.r
+.	(4e	(4c	.
+(8cc	.	.	.
+8b	4f#)	4d)	.
+8a)	.	.	.
+=30	=30	=30	=30
+(4a	(4f#	2G	2.r
+8b)	8g)	.	.
+(8g	8r	.	.
+8d	4r	4r	.
+8B)	.	.	.
+=31	=31	=31	=31
+4.A	2.r	4r	4r
+.	.	(4E	(4C
+(8c	.	.	.
+8B	.	4F#)	4D)
+8A)	.	.	.
+=32	=32	=32	=32
+(4A	4r	(4F#	4r
+8B)	8r	8G)	4G
+8dd'	8d'	8B'	.
+8ee'	8e'	8c'	(16F#
+.	.	.	16E
+8ff#'	8f#'	8A'	16D
+.	.	.	16C)
+=33	=33	=33	=33
+(8.gg	(8.g	(8.d	4BB
+16ddk	16dk	16Bk	.
+8b)	8B)	8G)	4r
+8b'	8B'	8G'	.
+8cc'	8c'	8A'	4r
+8dd'	8d'	8B'	.
+=34	=34	=34	=34
+(8.ee	(8.e	(8.c	4C
+16cck	16ck	16Ak	.
+8a)	8A)	8F#)	8r
+8a'	8A'	8F#'	8C
+8b'	8B'	8G'	8BB
+8cc'	8c'	8A'	8AA
+=35	=35	=35	=35
+(4b 4d	(4d	(4B	4GG
+4dd)	4g)	4d)	4BB
+(16dd	(16b	4d'	4D
+16cc	16a	.	.
+16b	16g	.	.
+16a)	16f#)	.	.
+=36	=36	=36	=36
+2g 2G	2g 2G	2d 2B	4G
+.	.	.	4GG
+4r;	4r;	4r;	4r;
+=37:!!:	=37:!!:	=37:!!:	=37:!!:
+*>C	*>C	*>C	*>C
+*k[b-e-]	*k[b-e-]	*k[b-e-]	*k[b-e-]
+*g:	*g:	*g:	*g:
+4r	2.r	8g	4GGxx
+.	.	8a	.
+8dd	.	8b-	4r
+8r	.	8a	.
+8gg	.	8b-	4r
+8r	.	8g	.
+=38	=38	=38	=38
+4ff#	4r	4a	8D
+.	.	.	8En
+4r	8a	4r	8F#
+.	8r	.	8E
+4r	8dd	4r	8F#
+.	8r	.	8D
+=39	=39	=39	=39
+4r	4b-	8g	4G
+.	.	8a	.
+8dd	4r	8b-	4r
+8r	.	8a	.
+8gg	4r	8b-	4r
+8r	.	8g	.
+=40	=40	=40	=40
+4ff#	4r	4a	8D
+.	.	.	8En
+4r	8a	4r	8F#
+.	8r	.	8E
+4r	8dd	4r	8F#
+.	8r	.	8D
+=41	=41	=41	=41
+4r	8b-	8g	4G
+.	8r	8f	.
+8bb-	8g	8en	4r
+8r	8r	8f	.
+8gg	4r	8e	4r
+8r	.	8d	.
+=42	=42	=42	=42
+4r	8en	4c#	8A
+.	8r	.	8B-
+8een	8c#	4r	8A
+8r	8r	.	8G#
+8cc#	4r	4r	8A
+8r	.	.	8Gn
+=43	=43	=43	=43
+4r	8a	8f	4Fn
+.	8r	8en	.
+8dd	8f	8d	4r
+8r	8r	8cn	.
+8ff	8d	8B-	4r
+8r	8r	8A	.
+=44	=44	=44	=44
+4r	8b-	4G	8G
+.	8r	.	8F
+8een	8g	4r	8En
+8r	8r	.	8D
+8gg	8en	4r	8C#
+8r	8r	.	8AA
+=45	=45	=45	=45
+(4ff	(4d	4a	8D
+.	.	.	8A
+4aa)	4f)	4a	8F
+.	.	.	8D
+4cc#'	4en'	4g	8A
+.	.	.	8AA
+=46	=46	=46	=46
+4dd	4d	4fn	8D
+.	.	.	8E-
+4r	4r	4r	8D
+.	.	.	8Cn
+4r	4r	4r	8BB-
+.	.	.	8AA
+=47:!!:	=47:!!:	=47:!!:	=47:!!:
+*>D	*>D	*>D	*>D
+8gg	2.r	4r	4GG
+8dd	.	.	.
+8bn	.	8g	4r
+8g	.	8r	.
+8gg	.	8bn	4r
+8ff	.	8r	.
+=48	=48	=48	=48
+4eenx	8cc	4cc	4r
+.	8g	.	.
+4r	8enx	4r	8C
+.	8cx	.	8r
+4r	8ccx	4r	8En
+.	8b-x	.	8r
+=49	=49	=49	=49
+8ffx	4ax	4r	4F
+8ccx	.	.	.
+8ax	4r	8f	4r
+8fx	.	8r	.
+8ffx	4r	8a	4r
+8ee-	.	8r	.
+=50	=50	=50	=50
+4dd	8b-x	4b-	4r
+.	8fx	.	.
+4r	8dx	4r	8BB-
+.	8B-x	.	8r
+4r	8b-x	4r	8D
+.	8ax	.	8r
+=51	=51	=51	=51
+8ee-	4gx	4r	4E-
+8b-	.	.	.
+8g	4r	4B-	4r
+8e-	.	.	.
+8ee-	(4g	(4B-	(4G
+8dd	.	.	.
+=52	=52	=52	=52
+8cc	4f#)	4c)	4A)
+8a	.	.	.
+8f#	4r	4r	4r
+8d	.	.	.
+8dd	4a	4d	(4F#
+8cc	.	.	.
+=53	=53	=53	=53
+8b-	(2d	(4G	4G
+8dd	.	.	.
+8a	.	4A	4Fn
+8dd	.	.	.
+8cc#	4g)	4B-)	4E-)
+8gg	.	.	.
+=54	=54	=54	=54
+4ff#	4a	4d	8D
+.	.	.	8A
+4r	4r	4r	8d
+.	.	.	8c
+4r	4r	4r	8B-
+.	.	.	8A
+=55	=55	=55	=55
+4r	8dd	8b-	4G
+.	8r	8a	.
+8gg	8b-	8g	4r
+8r	8r	8f	.
+8bb-	8g	8e-	4r
+8r	8r	8d	.
+=56	=56	=56	=56
+4r	8ee-	4c	8c
+.	8r	.	8B-
+8aa	8cc	4r	8A
+8r	8r	.	8G
+8ccc	8a	4r	8F#
+8r	8r	.	8D
+=57	=57	=57	=57
+(4bb-	(4g	4d	8G
+.	.	.	8d
+4ddd)	4b-)	4d	8B-
+.	.	.	8G
+4ff#'	4cc'	4a'	4D'
+=58	=58	=58	=58
+4gg'	4b-'	4g'	4E-'
+4r	4r	4r	4r
+4r	4r	4r	4r
+=59	=59	=59	=59
+8ee-	8cc	8a	8F#
+8r	8r	8r	8r
+8dd	8b-	8d	8G
+8r	8r	8r	8r
+4r	4r	4r	4r
+=60	=60	=60	=60
+8cc	8a	8f#	8D
+8r	8r	8r	8r
+8b-	8g	8g	8E-
+8r	8r	8r	8r
+4r	4r	4r	4r
+=61	=61	=61	=61
+8a	8e-	8c	8C
+8r	8r	8r	8r
+8g	8d	8B-	8D
+8r	8r	8r	8r
+8f#	8c	8A	8D
+8r	8r	8r	8r
+=62	=62	=62	=62
+4g	4B-	4G	4GG
+4r	4r	4r	4r
+4r	4r	4r	4r
+! Menuetto da capo senza Ritornello.	! Menuetto da capo senza Ritornello.	! Menuetto da capo senza Ritornello.	! Menuetto da capo senza Ritornello.
+==:|!	==:|!	==:|!	==:|!
+*-	*-	*-	*-
+!!!RWG: Appoggiaturas of spine 'Violino 1' need manual editing in measures: 15
+!!!RWG: Appoggiaturas of spine 'Violino 2' need manual editing in measures: 17
+!!!RWG: Appoggiaturas of spine 'Viola' need manual editing in measures: 14, 18
+!!!RWG: Appoggiaturas of spine 'Violoncello' need manual editing in measures: 16
+!!!RWG: Key is interpreted using the Humdrum key tool.
+!!!AFT: stage2
+!!!END: 1994/02/15
+!!format changes:
+!!content changes:
+!!public access: complete
+!!!KEY: 2190037121
+!!!EMD: Converted from MuseData to Humdrum Dec 16, 2000, by Andreas Kornstaedt using muse2kern.
