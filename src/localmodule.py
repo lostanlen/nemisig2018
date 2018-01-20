@@ -6,6 +6,14 @@ import os
 from scipy.fftpack import fft, ifft
 
 
+def get_data_dir():
+    return "/scratch/vl1019/nemisig2018_data"
+
+def get_dataset_name():
+    return "nemisig2018"
+
+
+
 def concatenate_layers(Sx, depth):
     layers = []
     for m in range(depth+1):
