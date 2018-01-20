@@ -60,47 +60,8 @@ def gauss(omega, den):
     return np.exp(- omega*omega / den)
 
 
-def get_pianoroll_part(part, J_fr, J_tm, quantization):
-    # Get the measure offsets
-    measure_offset = {}
-    for el in part.recurse(classFilter=('Measure')):
-        measure_offset[el.measureNumber] = el.offset
-    # Get the duration of the part
-    N = 2**J_tm
-    # Get the pitch and offset+duration
-    piano_roll_part = np.zeros((2**J_fr, N))
-    for this_note in part.recurse(classFilter=('Note')):
-        note_start = get_start_time(this_note,measure_offset,quantization)
-        note_end = get_end_time(this_note,measure_offset,quantization)
-        piano_roll_part[this_note.midi,note_start:note_end] = 1
-    return piano_roll_part
-
-
-def get_start_time(el,measure_offset,quantization):
-    if (el.offset is not None) and (el.measureNumber in measure_offset):
-        return int(math.ceil((measure_offset[el.measureNumber] + el.offset)*quantization))
-    # Else, no time defined for this element and the function returns None
-
-
-def get_end_time(el,measure_offset,quantization):
-    if (el.offset is not None) and (el.measureNumber in measure_offset):
-        return int(math.ceil((measure_offset[el.measureNumber] + el.offset + el.duration.quarterLength)*quantization))
-    # Else, no time defined for this element and the function returns None
-
-
 def is_even(n):
     return (n%2 == 0)
-
-
-def load_composer(composer_dir, J_fr, J_tm, quantization):
-    pianorolls = []
-    for (_, _, filenames) in os.walk(composer_dir):
-        for filename in filenames:
-            path = os.path.join(composer_dir, filename)
-            score = m21.converter.parse(path)
-            pianoroll = score_to_pianoroll(score, J_fr, J_tm, quantization)
-            pianorolls.append(pianoroll)
-    return pianorolls
 
 
 def morlet(center, den, N, n_periods):
@@ -134,18 +95,6 @@ def scatter(U, filterbank, dim):
     Y_ft = U_ft * filterbank
     Y = ifft(Y_ft, axis=dim)
     return Y
-
-
-def score_to_pianoroll(score, J_fr, J_tm, quantization):
-    pianoroll_parts = []
-    n_parts = len(score.parts)
-    for part_id in range(n_parts):
-        part = score.parts[part_id]
-        pianoroll_part = get_pianoroll_part(part, J_fr, J_tm, quantization)
-        pianoroll_parts.append(pianoroll_part)
-    mtrack_pianoroll = np.stack(pianoroll_parts, 2)
-    pianoroll = mtrack_pianoroll.max(axis=2)
-    return pianoroll
 
 
 def setup_temporal_scattering(J_tm, depth):
