@@ -1,0 +1,518 @@
+
+Jupyter server is running on: c99-06
+Job starts at: Sun Jan 14 16:20:00 EST 2018
+
+Step 1 :
+
+If you are working in NYU campus, please open an iTerm window, run command
+
+ssh -L 6567:localhost:6567 vl1019@prince.hpc.nyu.edu
+
+If you are working off campus, you should already have ssh tunneling setup through HPC bastion host,
+that you can directly login to prince with command
+
+ssh vl1019@prince
+
+Please open an iTerm window, run command
+
+ssh -L 6567:localhost:6567 vl1019@prince
+
+Step 2:
+
+Keep the iTerm windows in the previouse step open. Now open browser, find the line with
+
+The Jupyter Notebook is running at:
+
+the URL is something: http://localhost:/?token=XXXXXXXX
+
+you should be able to connect to jupyter notebook running remotly on prince compute node with above url
+
+[I 16:20:08.402 NotebookApp] Writing notebook server cookie secret to /state/partition1/job-4044019/jupyter/notebook_cookie_secret
+[I 16:20:11.157 NotebookApp] Serving notebooks from local directory: /home/vl1019
+[I 16:20:11.157 NotebookApp] 0 active kernels 
+[I 16:20:11.157 NotebookApp] The Jupyter Notebook is running at: http://localhost:6567/?token=6e56cce2c00b7d93194898b86452efc3fba561be41cca016
+[I 16:20:11.157 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 16:20:11.158 NotebookApp] 
+    
+    Copy/paste this URL into your browser when you connect for the first time,
+    to login with a token:
+        http://localhost:6567/?token=6e56cce2c00b7d93194898b86452efc3fba561be41cca016
+[I 16:32:48.666 NotebookApp] 302 GET /?token=6e56cce2c00b7d93194898b86452efc3fba561be41cca016 (::1) 1.10ms
+[I 16:37:33.841 NotebookApp] Creating new notebook in /nemisig2018/notebooks
+[W 16:38:38.935 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js (::1) 43.86ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 16:38:39.497 NotebookApp] Kernel started: e120b7ae-1d3a-480c-a795-a7468659d344
+[I 16:40:39.541 NotebookApp] Saving file at /nemisig2018/notebooks/Untitled.ipynb
+[I 16:44:40.991 NotebookApp] Saving file at /nemisig2018/notebooks/Untitled.ipynb
+[I 16:54:01.634 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913874 (::1) 1.07ms
+[W 16:54:01.761 NotebookApp] None
+[W 16:54:01.762 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 41.03ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 16:58:01.638 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913875 (::1) 1.17ms
+[W 16:58:01.732 NotebookApp] None
+[W 16:58:01.733 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.50ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 17:01:07.747 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913876 (::1) 1.04ms
+[W 17:01:07.822 NotebookApp] None
+[W 17:01:07.822 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 1.54ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 17:03:11.201 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913877 (::1) 1.03ms
+[W 17:03:11.288 NotebookApp] None
+[W 17:03:11.289 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 41.05ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 17:06:13.024 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913878 (::1) 1.05ms
+[W 17:06:13.112 NotebookApp] None
+[W 17:06:13.113 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.75ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 17:08:44.811 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913879 (::1) 1.10ms
+[W 17:08:44.910 NotebookApp] None
+[W 17:08:44.910 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.60ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 17:11:44.814 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913880 (::1) 1.12ms
+[W 17:11:44.903 NotebookApp] None
+[W 17:11:44.903 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.50ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 17:13:19.838 NotebookApp] 302 GET /api/sessions?_=1515965851408 (::1) 1.01ms
+[I 17:13:19.839 NotebookApp] 302 GET /api/terminals?_=1515965851409 (::1) 0.87ms
+[I 17:13:44.802 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913881 (::1) 1.06ms
+[W 17:13:44.922 NotebookApp] None
+[W 17:13:44.923 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.97ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 17:16:19.912 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913882 (::1) 1.05ms
+[W 17:16:20.021 NotebookApp] None
+[W 17:16:20.022 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.76ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 17:19:21.901 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913883 (::1) 1.08ms
+[W 17:19:22.010 NotebookApp] None
+[W 17:19:22.011 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.60ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 17:22:43.465 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913884 (::1) 1.08ms
+[W 17:22:43.641 NotebookApp] None
+[W 17:22:43.642 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.87ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 17:26:01.924 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913885 (::1) 1.06ms
+[W 17:26:04.276 NotebookApp] None
+[W 17:26:04.276 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.46ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 17:29:10.489 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913886 (::1) 1.12ms
+[W 17:29:10.642 NotebookApp] None
+[W 17:29:10.642 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 41.13ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 17:33:37.563 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913887 (::1) 1.12ms
+[W 17:33:37.708 NotebookApp] None
+[W 17:33:37.709 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.63ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 17:34:00.406 NotebookApp] 302 GET /api/sessions?_=1515965851410 (::1) 1.01ms
+[I 17:34:01.852 NotebookApp] 302 GET /api/terminals?_=1515965851411 (::1) 1.03ms
+[I 17:35:37.586 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913888 (::1) 1.07ms
+[W 17:35:37.812 NotebookApp] None
+[W 17:35:37.813 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.43ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 17:38:07.599 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913889 (::1) 1.03ms
+[W 17:38:07.746 NotebookApp] None
+[W 17:38:07.746 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 1.58ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 17:40:03.352 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913890 (::1) 1.03ms
+[W 17:40:03.552 NotebookApp] None
+[W 17:40:03.553 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.61ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 17:43:43.314 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913891 (::1) 1.07ms
+[W 17:43:43.476 NotebookApp] None
+[W 17:43:43.477 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 1.60ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 17:46:41.217 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913892 (::1) 1.07ms
+[W 17:46:41.310 NotebookApp] None
+[W 17:46:41.310 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.42ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 17:49:36.118 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913893 (::1) 1.08ms
+[W 17:49:36.175 NotebookApp] None
+[W 17:49:36.176 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 1.55ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 17:52:09.889 NotebookApp] 302 GET /api/terminals?_=1515965851413 (::1) 0.99ms
+[I 17:52:09.891 NotebookApp] 302 GET /api/sessions?_=1515965851412 (::1) 0.71ms
+[I 17:52:18.097 NotebookApp] 302 GET /notebooks/nemisig2018/notebooks/Untitled.ipynb (::1) 1.04ms
+[I 17:52:21.093 NotebookApp] 302 GET /api/sessions?_=1515965851414 (::1) 1.14ms
+[I 17:52:21.095 NotebookApp] 302 GET /api/terminals?_=1515965851415 (::1) 0.76ms
+[I 17:52:36.966 NotebookApp] 302 GET /api/terminals?_=1515965851417 (::1) 1.11ms
+[I 17:52:36.968 NotebookApp] 302 GET /api/sessions?_=1515965851416 (::1) 0.92ms
+[I 17:52:37.201 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913894 (::1) 1.16ms
+[W 17:52:37.609 NotebookApp] None
+[W 17:52:37.610 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 41.09ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 17:55:10.299 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913895 (::1) 1.07ms
+[W 17:55:10.395 NotebookApp] None
+[W 17:55:10.396 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.73ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 17:58:01.766 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913896 (::1) 1.06ms
+[W 17:58:01.845 NotebookApp] None
+[W 17:58:01.845 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 1.57ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 18:01:13.228 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913897 (::1) 1.12ms
+[W 18:01:13.322 NotebookApp] None
+[W 18:01:13.323 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.45ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 18:04:20.881 NotebookApp] 302 GET /api/sessions?_=1515965851418 (::1) 1.17ms
+[I 18:04:20.882 NotebookApp] 302 GET /api/terminals?_=1515965851419 (::1) 0.82ms
+[I 18:04:54.702 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913898 (::1) 1.22ms
+[W 18:04:54.815 NotebookApp] None
+[W 18:04:54.816 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.75ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 18:08:33.251 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913899 (::1) 1.05ms
+[W 18:08:33.347 NotebookApp] None
+[W 18:08:33.348 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 41.34ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 18:11:03.704 NotebookApp] 302 GET /api/terminals?_=1515965851421 (::1) 0.98ms
+[I 18:11:03.705 NotebookApp] 302 GET /api/sessions?_=1515965851420 (::1) 0.76ms
+[I 18:14:01.798 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913900 (::1) 1.11ms
+[W 18:14:01.858 NotebookApp] None
+[W 18:14:01.858 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 1.60ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 18:16:16.365 NotebookApp] 302 GET /api/terminals?_=1515965851423 (::1) 0.98ms
+[I 18:16:16.367 NotebookApp] 302 GET /api/sessions?_=1515965851422 (::1) 0.71ms
+[I 18:18:31.450 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913901 (::1) 1.05ms
+[W 18:18:31.593 NotebookApp] None
+[W 18:18:31.594 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 41.11ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 18:21:22.980 NotebookApp] 302 GET / (::1) 0.54ms
+[I 18:21:25.095 NotebookApp] 302 GET /tree? (::1) 0.95ms
+[I 18:22:41.261 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913902 (::1) 1.07ms
+[W 18:22:41.405 NotebookApp] None
+[W 18:22:41.406 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.70ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 18:26:02.082 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913903 (::1) 1.12ms
+[W 18:26:02.239 NotebookApp] None
+[W 18:26:02.240 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.59ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 18:29:32.049 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913904 (::1) 1.04ms
+[W 18:29:32.198 NotebookApp] None
+[W 18:29:32.199 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 41.27ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 18:32:42.119 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913905 (::1) 1.08ms
+[W 18:32:42.272 NotebookApp] None
+[W 18:32:42.273 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.78ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 18:36:02.084 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913906 (::1) 1.07ms
+[W 18:36:02.222 NotebookApp] None
+[W 18:36:02.223 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.95ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 18:39:23.031 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913907 (::1) 1.17ms
+[W 18:39:23.197 NotebookApp] None
+[W 18:39:23.198 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.97ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 18:42:42.126 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913908 (::1) 1.17ms
+[W 18:42:42.427 NotebookApp] None
+[W 18:42:42.428 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.59ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 18:45:10.619 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913909 (::1) 1.11ms
+[W 18:45:10.851 NotebookApp] None
+[W 18:45:10.852 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.99ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 18:49:11.135 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913910 (::1) 1.28ms
+[W 18:49:11.247 NotebookApp] None
+[W 18:49:11.248 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.60ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 18:53:10.634 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913911 (::1) 1.07ms
+[W 18:53:10.733 NotebookApp] None
+[W 18:53:10.734 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 41.35ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 18:55:14.922 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913912 (::1) 1.08ms
+[W 18:55:15.041 NotebookApp] None
+[W 18:55:15.041 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.56ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 18:55:36.922 NotebookApp] 302 GET /api/sessions?_=1515965851424 (::1) 1.00ms
+[I 18:55:37.200 NotebookApp] 302 GET /api/terminals?_=1515965851425 (::1) 1.06ms
+[I 18:57:14.886 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913913 (::1) 1.16ms
+[W 18:57:15.002 NotebookApp] None
+[W 18:57:15.003 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.56ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 19:00:00.924 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913914 (::1) 1.10ms
+[W 19:00:01.023 NotebookApp] None
+[W 19:00:01.023 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.70ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 19:03:10.688 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913915 (::1) 1.07ms
+[W 19:03:10.961 NotebookApp] None
+[W 19:03:10.961 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.63ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 19:07:11.213 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913916 (::1) 1.09ms
+[W 19:07:11.322 NotebookApp] None
+[W 19:07:11.323 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 1.54ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 19:11:10.669 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913917 (::1) 1.13ms
+[W 19:11:10.818 NotebookApp] None
+[W 19:11:10.819 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.95ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 19:15:10.716 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913918 (::1) 1.12ms
+[W 19:15:10.910 NotebookApp] None
+[W 19:15:10.911 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.95ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 19:19:10.700 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913919 (::1) 1.05ms
+[W 19:19:10.865 NotebookApp] None
+[W 19:19:10.866 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.54ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 19:22:36.244 NotebookApp] 302 GET /api/terminals?_=1515965851427 (::1) 1.38ms
+[I 19:22:36.246 NotebookApp] 302 GET /api/sessions?_=1515965851426 (::1) 0.82ms
+[I 19:22:54.628 NotebookApp] 302 GET /api/terminals?_=1515965851429 (::1) 0.98ms
+[I 19:22:54.630 NotebookApp] 302 GET /api/sessions?_=1515965851428 (::1) 0.67ms
+[I 19:23:10.660 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913920 (::1) 1.19ms
+[W 19:23:10.746 NotebookApp] None
+[W 19:23:10.747 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 41.28ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 19:26:02.138 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913921 (::1) 1.11ms
+[W 19:26:02.224 NotebookApp] None
+[W 19:26:02.225 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 41.15ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 19:29:22.166 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913922 (::1) 1.14ms
+[W 19:29:22.287 NotebookApp] None
+[W 19:29:22.288 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.67ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 19:32:45.288 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913923 (::1) 1.10ms
+[W 19:32:51.904 NotebookApp] None
+[W 19:32:51.905 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.70ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 19:34:42.149 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913924 (::1) 1.10ms
+[W 19:34:42.237 NotebookApp] None
+[W 19:34:42.238 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.98ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 19:36:42.159 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913925 (::1) 1.07ms
+[W 19:36:42.249 NotebookApp] None
+[W 19:36:42.250 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.51ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 19:38:42.161 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913926 (::1) 1.13ms
+[W 19:38:42.248 NotebookApp] None
+[W 19:38:42.249 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.80ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 19:40:42.164 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913927 (::1) 1.10ms
+[W 19:40:42.226 NotebookApp] None
+[W 19:40:42.227 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 1.61ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 19:42:42.168 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913928 (::1) 1.08ms
+[W 19:42:42.261 NotebookApp] None
+[W 19:42:42.261 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.49ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 19:44:42.175 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913929 (::1) 1.10ms
+[W 19:44:42.264 NotebookApp] None
+[W 19:44:42.264 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.92ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 19:46:42.202 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913930 (::1) 1.08ms
+[W 19:46:42.343 NotebookApp] None
+[W 19:46:42.343 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.42ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 19:48:42.210 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913931 (::1) 1.07ms
+[W 19:48:42.350 NotebookApp] None
+[W 19:48:42.351 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.96ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 19:50:42.297 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913932 (::1) 1.19ms
+[W 19:50:43.017 NotebookApp] None
+[W 19:50:43.018 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.72ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 19:52:42.208 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913933 (::1) 1.06ms
+[W 19:52:42.356 NotebookApp] None
+[W 19:52:42.356 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.63ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 19:54:42.228 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913934 (::1) 1.07ms
+[W 19:54:42.447 NotebookApp] None
+[W 19:54:42.448 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.77ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 19:56:42.220 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913935 (::1) 1.11ms
+[W 19:56:42.345 NotebookApp] None
+[W 19:56:42.345 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 1.60ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 19:58:42.221 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913936 (::1) 1.07ms
+[W 19:58:42.375 NotebookApp] None
+[W 19:58:42.376 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 41.00ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 20:00:42.230 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913937 (::1) 1.12ms
+[W 20:00:42.447 NotebookApp] None
+[W 20:00:42.447 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.96ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 20:02:42.230 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913938 (::1) 1.14ms
+[W 20:02:42.375 NotebookApp] None
+[W 20:02:42.376 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.82ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 20:04:52.256 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913939 (::1) 1.05ms
+[W 20:04:52.372 NotebookApp] None
+[W 20:04:52.373 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 41.29ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 20:06:52.958 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913940 (::1) 1.14ms
+[W 20:06:53.279 NotebookApp] None
+[W 20:06:53.280 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.79ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 20:08:53.047 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913941 (::1) 1.11ms
+[W 20:08:53.171 NotebookApp] None
+[W 20:08:53.171 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 41.36ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 20:11:02.947 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913942 (::1) 1.09ms
+[W 20:11:03.042 NotebookApp] None
+[W 20:11:03.043 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.73ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 20:13:11.134 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913943 (::1) 1.09ms
+[W 20:13:11.283 NotebookApp] None
+[W 20:13:11.284 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.57ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 20:15:11.126 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913944 (::1) 1.12ms
+[W 20:15:11.239 NotebookApp] None
+[W 20:15:11.239 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.33ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 20:17:11.142 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913945 (::1) 1.46ms
+[W 20:17:11.250 NotebookApp] None
+[W 20:17:11.250 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.77ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 20:19:11.136 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913946 (::1) 1.14ms
+[W 20:19:11.184 NotebookApp] None
+[W 20:19:11.185 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 1.68ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 20:21:11.159 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913947 (::1) 1.09ms
+[W 20:21:11.279 NotebookApp] None
+[W 20:21:11.279 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.60ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 20:23:11.198 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913948 (::1) 1.11ms
+[W 20:23:11.293 NotebookApp] None
+[W 20:23:11.294 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.92ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 20:25:11.351 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913949 (::1) 1.17ms
+[W 20:25:11.503 NotebookApp] None
+[W 20:25:11.503 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.48ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 20:27:11.159 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913950 (::1) 1.07ms
+[W 20:27:11.263 NotebookApp] None
+[W 20:27:11.264 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.64ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 20:29:11.157 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913951 (::1) 1.07ms
+[W 20:29:11.244 NotebookApp] None
+[W 20:29:11.244 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.56ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 20:31:11.171 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913952 (::1) 1.13ms
+[W 20:31:11.296 NotebookApp] None
+[W 20:31:11.296 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.49ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 20:33:11.170 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913953 (::1) 1.09ms
+[W 20:33:11.275 NotebookApp] None
+[W 20:33:11.276 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.70ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 20:35:11.185 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913954 (::1) 1.08ms
+[W 20:35:11.322 NotebookApp] None
+[W 20:35:11.322 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.43ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 20:37:11.185 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913955 (::1) 1.07ms
+[W 20:37:11.315 NotebookApp] None
+[W 20:37:11.316 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 41.21ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 20:39:11.183 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913956 (::1) 1.05ms
+[W 20:39:11.342 NotebookApp] None
+[W 20:39:11.342 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.45ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 20:41:11.204 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913957 (::1) 1.08ms
+[W 20:41:11.311 NotebookApp] None
+[W 20:41:11.311 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 1.67ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 20:43:11.208 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913958 (::1) 1.15ms
+[W 20:43:11.353 NotebookApp] None
+[W 20:43:11.353 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.57ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 20:45:12.390 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913959 (::1) 1.11ms
+[W 20:45:12.879 NotebookApp] None
+[W 20:45:12.880 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.86ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 20:47:11.414 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913960 (::1) 1.07ms
+[W 20:47:11.587 NotebookApp] None
+[W 20:47:11.587 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.54ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 20:49:22.516 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913961 (::1) 1.08ms
+[W 20:49:22.656 NotebookApp] None
+[W 20:49:22.657 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.77ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 20:51:57.989 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913962 (::1) 1.08ms
+[W 20:51:58.173 NotebookApp] None
+[W 20:51:58.173 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.42ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 20:54:59.388 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913963 (::1) 1.17ms
+[W 20:54:59.445 NotebookApp] None
+[W 20:54:59.446 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 1.57ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 20:57:28.323 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913964 (::1) 1.11ms
+[W 20:57:28.412 NotebookApp] None
+[W 20:57:28.413 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 1.65ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 20:59:39.455 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913965 (::1) 1.10ms
+[W 20:59:40.165 NotebookApp] None
+[W 20:59:40.165 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 41.09ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 21:01:59.447 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913966 (::1) 1.06ms
+[W 21:01:59.778 NotebookApp] None
+[W 21:01:59.779 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 41.12ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 21:04:29.406 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913967 (::1) 1.10ms
+[W 21:04:29.519 NotebookApp] None
+[W 21:04:29.519 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.54ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 21:06:39.410 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913968 (::1) 1.55ms
+[W 21:06:39.506 NotebookApp] None
+[W 21:06:39.506 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.67ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 21:09:09.420 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913969 (::1) 1.13ms
+[W 21:09:09.531 NotebookApp] None
+[W 21:09:09.531 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.50ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 21:11:29.475 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913970 (::1) 1.15ms
+[W 21:11:29.632 NotebookApp] None
+[W 21:11:29.632 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.86ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 21:13:41.362 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913971 (::1) 1.07ms
+[W 21:13:41.496 NotebookApp] None
+[W 21:13:41.496 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.35ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 21:15:59.647 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913972 (::1) 1.16ms
+[W 21:15:59.949 NotebookApp] None
+[W 21:15:59.949 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.60ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 21:18:29.620 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913973 (::1) 1.07ms
+[W 21:18:30.061 NotebookApp] None
+[W 21:18:30.061 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.66ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 21:20:41.320 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913974 (::1) 1.37ms
+[W 21:20:41.680 NotebookApp] None
+[W 21:20:41.681 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 1.57ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 21:22:59.565 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913975 (::1) 1.08ms
+[W 21:22:59.796 NotebookApp] None
+[W 21:22:59.797 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.62ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 21:25:27.048 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913976 (::1) 1.17ms
+[W 21:25:27.795 NotebookApp] None
+[W 21:25:27.796 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 41.20ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 21:27:39.481 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913977 (::1) 1.09ms
+[W 21:27:39.686 NotebookApp] None
+[W 21:27:39.687 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.51ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 21:29:59.476 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913978 (::1) 1.06ms
+[W 21:30:00.724 NotebookApp] None
+[W 21:30:00.724 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 41.40ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 21:32:22.270 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913979 (::1) 1.09ms
+[W 21:32:22.428 NotebookApp] None
+[W 21:32:22.429 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.85ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 21:34:41.396 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913980 (::1) 1.48ms
+[W 21:34:42.660 NotebookApp] None
+[W 21:34:42.660 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.46ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 21:37:02.611 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913981 (::1) 1.10ms
+[W 21:37:03.029 NotebookApp] None
+[W 21:37:03.030 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 1.59ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 21:37:35.149 NotebookApp] 302 GET /api/terminals?_=1515965851431 (::1) 1.07ms
+[I 21:37:35.150 NotebookApp] 302 GET /api/sessions?_=1515965851430 (::1) 0.77ms
+[I 21:38:30.540 NotebookApp] 302 GET /api/terminals?_=1515965851433 (::1) 1.06ms
+[I 21:38:30.541 NotebookApp] 302 GET /api/sessions?_=1515965851432 (::1) 0.73ms
+[I 21:39:06.685 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913982 (::1) 1.09ms
+[W 21:39:06.829 NotebookApp] None
+[W 21:39:06.830 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 41.24ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 21:41:09.562 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913983 (::1) 1.08ms
+[W 21:41:09.789 NotebookApp] None
+[W 21:41:09.790 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 1.62ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 21:44:22.433 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913984 (::1) 1.06ms
+[W 21:44:22.505 NotebookApp] None
+[W 21:44:22.506 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 1.56ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 21:47:34.632 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913985 (::1) 1.13ms
+[W 21:47:35.356 NotebookApp] None
+[W 21:47:35.357 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 1.69ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 21:48:36.173 NotebookApp] 302 GET /api/sessions?_=1515965851434 (::1) 1.01ms
+[I 21:48:36.174 NotebookApp] 302 GET /api/terminals?_=1515965851435 (::1) 0.78ms
+[I 21:49:42.304 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913986 (::1) 1.14ms
+[W 21:49:42.482 NotebookApp] None
+[W 21:49:42.482 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.54ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 21:49:43.588 NotebookApp] 302 GET /api/sessions?_=1515965851436 (::1) 1.44ms
+[I 21:49:43.656 NotebookApp] 302 GET /api/terminals?_=1515965851437 (::1) 1.12ms
+[I 21:51:42.386 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913987 (::1) 1.17ms
+[W 21:51:42.534 NotebookApp] None
+[W 21:51:42.534 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 41.33ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 21:54:01.173 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913988 (::1) 1.10ms
+[W 21:54:01.382 NotebookApp] None
+[W 21:54:01.383 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.62ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 21:56:01.174 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913989 (::1) 1.10ms
+[W 21:56:01.287 NotebookApp] None
+[W 21:56:01.288 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 41.23ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 21:59:48.994 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913990 (::1) 1.18ms
+[W 21:59:49.264 NotebookApp] None
+[W 21:59:49.264 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.49ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 22:01:49.316 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913991 (::1) 1.13ms
+[W 22:01:49.891 NotebookApp] None
+[W 22:01:49.892 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.49ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 22:04:12.750 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913992 (::1) 1.12ms
+[W 22:04:12.969 NotebookApp] None
+[W 22:04:12.970 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.35ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 22:07:02.821 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913993 (::1) 1.07ms
+[W 22:07:02.932 NotebookApp] None
+[W 22:07:02.932 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.55ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 22:10:36.620 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913994 (::1) 1.13ms
+[W 22:10:36.708 NotebookApp] None
+[W 22:10:36.709 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.61ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 22:13:36.651 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913995 (::1) 1.09ms
+[W 22:13:36.768 NotebookApp] None
+[W 22:13:36.768 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 41.24ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 22:16:36.886 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913996 (::1) 1.12ms
+[W 22:16:37.202 NotebookApp] None
+[W 22:16:37.202 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.42ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 22:19:36.753 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913997 (::1) 1.10ms
+[W 22:19:38.915 NotebookApp] None
+[W 22:19:38.915 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 41.27ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 22:22:37.588 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913998 (::1) 1.60ms
+[W 22:22:39.046 NotebookApp] None
+[W 22:22:39.047 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.93ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 22:25:36.706 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965913999 (::1) 1.52ms
+[W 22:25:37.167 NotebookApp] None
+[W 22:25:37.168 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 1.64ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 22:28:36.910 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965914000 (::1) 1.15ms
+[W 22:28:37.202 NotebookApp] None
+[W 22:28:37.203 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 1.62ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 22:31:36.691 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965914001 (::1) 1.09ms
+[W 22:31:36.834 NotebookApp] None
+[W 22:31:36.835 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.81ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 22:34:36.709 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965914002 (::1) 1.09ms
+[W 22:34:36.906 NotebookApp] None
+[W 22:34:36.906 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.85ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 22:37:36.692 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965914003 (::1) 1.09ms
+[W 22:37:36.833 NotebookApp] None
+[W 22:37:36.834 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.92ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 22:40:41.240 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965914004 (::1) 1.09ms
+[W 22:40:41.375 NotebookApp] None
+[W 22:40:41.376 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 41.84ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 22:43:36.695 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965914005 (::1) 1.17ms
+[W 22:43:36.824 NotebookApp] None
+[W 22:43:36.825 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.64ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 22:46:36.694 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965914006 (::1) 1.07ms
+[W 22:46:36.830 NotebookApp] None
+[W 22:46:36.831 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.83ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 22:49:36.710 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965914007 (::1) 1.15ms
+[W 22:49:36.844 NotebookApp] None
+[W 22:49:36.845 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.82ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 22:52:36.706 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965914008 (::1) 1.14ms
+[W 22:52:36.791 NotebookApp] None
+[W 22:52:36.792 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.95ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 22:55:36.714 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965914009 (::1) 1.06ms
+[W 22:55:36.766 NotebookApp] None
+[W 22:55:36.766 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 1.47ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 22:58:36.710 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965914010 (::1) 1.10ms
+[W 22:58:36.805 NotebookApp] None
+[W 22:58:36.806 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 41.53ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 23:01:36.707 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965914011 (::1) 1.17ms
+[W 23:01:36.822 NotebookApp] None
+[W 23:01:36.822 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 1.46ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 23:04:36.722 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965914012 (::1) 1.05ms
+[W 23:04:36.818 NotebookApp] None
+[W 23:04:36.819 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 41.18ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 23:07:36.733 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965914013 (::1) 1.03ms
+[W 23:07:36.872 NotebookApp] None
+[W 23:07:36.873 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 41.11ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 23:10:36.720 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965914014 (::1) 1.01ms
+[W 23:10:36.816 NotebookApp] None
+[W 23:10:36.817 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.42ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 23:13:36.732 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965914015 (::1) 1.03ms
+[W 23:13:36.795 NotebookApp] None
+[W 23:13:36.795 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 1.46ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 23:16:36.764 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965914016 (::1) 1.05ms
+[W 23:16:36.863 NotebookApp] None
+[W 23:16:36.863 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 1.54ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 23:19:36.752 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965914017 (::1) 1.10ms
+[W 23:19:36.997 NotebookApp] None
+[W 23:19:36.998 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 1.55ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 23:22:36.770 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965914018 (::1) 1.08ms
+[W 23:22:36.886 NotebookApp] None
+[W 23:22:36.886 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 1.48ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[I 23:25:36.778 NotebookApp] 302 GET /api/contents/nemisig2018/notebooks/Untitled.ipynb?content=0&_=1515965914019 (::1) 0.97ms
+[W 23:25:36.929 NotebookApp] None
+[W 23:25:36.929 NotebookApp] 403 PUT /api/contents/nemisig2018/notebooks/Untitled.ipynb (::1) 40.40ms referer=http://localhost:6567/notebooks/nemisig2018/notebooks/Untitled.ipynb?kernel_name=python3
+[W 23:27:41.088 NotebookApp] WebSocket ping timeout after 119771 ms.
+slurmstepd: error: *** JOB 4044019 ON c99-06 CANCELLED AT 2018-01-15T04:20:05 DUE TO TIME LIMIT ***
