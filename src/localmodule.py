@@ -6,6 +6,9 @@ import os
 from scipy.fftpack import fft, ifft
 
 
+def get_composers():
+    return ["Haydn", "Mozart"]
+
 def get_data_dir():
     return "/scratch/vl1019/nemisig2018_data"
 
