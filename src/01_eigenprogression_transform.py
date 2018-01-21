@@ -1,9 +1,13 @@
 import localmodule
+
+import datetime
+import h5py
 import math
 import music21 as m21
 import numpy as np
 import os
 import scipy
+import scipy.linalg
 import time
 
 
@@ -27,6 +31,9 @@ sigma = 0.16
 start_time = int(time.time())
 print(str(datetime.datetime.now()) + " Start.")
 print("Eigenprogression transform.")
+print("Composer: " + composer_str + ".")
+print("Piece: " + track_str + ".")
+print("")
 print("h5py version: {:s}".format(h5py.__version__))
 print("music21 version: {:s}".format(m21.__version__))
 print("numpy version: {:s}".format(np.__version__))
@@ -75,7 +82,6 @@ for part_id in range(n_parts):
         pianoroll_part[
             note.midi - midi_octave_offset * 12,
             note_start:note_end] = 1
-        midis.append(note.midi)
     pianoroll_parts.append(pianoroll_part)
 
 # Stack parts into piano roll.
@@ -130,11 +136,11 @@ cosine_basis = np.array([[np.cos(2*np.pi*omega*t/3)
     for omega in range(3)] for t in range(3)]).T
 sine_basis = np.array([[np.sin(2*np.pi*omega*t/3)
     for omega in range(3)] for t in range(3)]).T
-fourier_basis = cosine_basis + np.complex(0, 1) * sine_basis
+fourier_basis = cosine_basis + 1.0j * sine_basis
 major_template = [0, 4, 7]
 minor_template = [0, 3, 7]
-major_eigentriads = np.zeros((12, 3), dtype=np.complex)
-minor_eigentriads = np.zeros((12, 3), dtype=np.complex)
+major_eigentriads = np.zeros((12, 3), dtype=np.complex64)
+minor_eigentriads = np.zeros((12, 3), dtype=np.complex64)
 for omega in range(3):
     for t, p in enumerate(major_template):
         major_eigentriads[p, omega] = fourier_basis[t, omega]
@@ -142,7 +148,7 @@ for omega in range(3):
         minor_eigentriads[p, omega] = fourier_basis[t, omega]
 eigentriads = np.stack(
     (major_eigentriads, minor_eigentriads), axis=1)
-eigentriads = eigentriads.astype('float32')
+eigentriads = eigentriads.astype(np.complex64)
 
 # Convolve chromagram with eigentriads
 chromagram_ft = scipy.fftpack.fft(chromagram, axis=0)
@@ -198,8 +204,8 @@ scattering_transform = scipy.fftpack.ifft(scattering_transform_ft, axis=3)
 elapsed_time = time.time() - int(scattering_start_time)
 elapsed_minutes = int((elapsed_time % (60 * 60)) / 60)
 elapsed_seconds = elapsed_time % 60.
-elapsed_str = "{:>02} minutes and {>05} seconds"
-print("Scattering transform took " + elapsed_str + ".")
+elapsed_str = "{:>05.2f}".format(elapsed_time)
+print("Scattering transform took " + elapsed_str + " seconds.")
 
 
 ######################   (5) EIGENPROGRESSION TRANSFORM   ######################
@@ -317,8 +323,8 @@ eigenprogressions = np.stack((
     psi_C_Dbm_D_Ebm,
     psi_pentatonic_down,
     psi_minorkey), axis=-1)
-eigenprogressions = np.reshape(
-    eigenprogressions, (12, 2, -1), 'F')
+eigenprogressions = np.reshape(eigenprogressions, (12, 2, -1), 'F')
+eigenprogressions = eigenprogressions.astype(np.complex64)
 
 # Apply eigenprogression transform.
 scattering_transform_ft = scipy.fftpack.fft(scattering_transform, axis=0)
@@ -344,7 +350,7 @@ spiral_start_time = int(time.time())
 # Setup wavelet filter bank across octaves.
 # This is comparable to a spiral scattering transform.
 J_oct = 3
-octave_filterbank_ft = np.zeros((n_octaves, 2*J_oct-1), dtype=np.float32s)
+octave_filterbank_ft = np.zeros((n_octaves, 2*J_oct-1), dtype=np.float32)
 for j in range(J_oct-1):
     xi_j = xi * 2**(-j)
     sigma_j = sigma * 2**(-j)
