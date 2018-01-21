@@ -12,7 +12,6 @@ dataset_name = localmodule.get_dataset_name()
 composers = localmodule.get_composers()
 kern_name = "_".join([dataset_name, "kern"])
 kern_dir = os.path.join(data_dir, kern_name)
-units = localmodule.get_units()
 script_name = "01_eigenprogression_transform.py"
 script_path = os.path.join("..", "src", script_name)
 
