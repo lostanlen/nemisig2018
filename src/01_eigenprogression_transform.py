@@ -413,7 +413,7 @@ out_path = os.path.join(composer_dir,
         dataset_name,
         "eigenprogression-transform",
         composer_str,
-        track_str + ".hdf5"])
+        track_str + ".hdf5"]))
 out_file = h5py.File(out_path)
 hdf5_dataset_size = S2.shape
 hdf5_dataset_key = "_".join([
