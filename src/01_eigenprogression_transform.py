@@ -18,13 +18,13 @@ track_str = args[1]
 
 
 # Define constants.
-J_tm = 9
+J_tm = 8
 N = 2**10
 n_octaves = 8
 midi_octave_offset = 2
 quantization = 2.0
-xi = 0.4
-sigma = 0.16
+xi = 0.25
+sigma = 0.1
 
 
 # Print header.
