@@ -27,7 +27,7 @@ os.makedirs(slurm_dir, exist_ok=True)
 # Loop over composers.
 for composer_str in composers:
 
-    file_name = script_name[:3] + "_" + composer_str + ".sh"
+    file_name = script_name[:2] + "_" + composer_str + ".sh"
     file_path = os.path.join(sbatch_dir, file_name)
 
     # Open shell file
@@ -48,7 +48,7 @@ for composer_str in composers:
             # Define job name.
             piece_str = piece_name[:-4]
             job_name = "_".join(
-                [script_name[:3], composer_str, piece_str])
+                [script_name[:2], composer_str, piece_str])
             sbatch_str = "sbatch " + job_name + ".sbatch"
 
             # Write SBATCH command to shell file.
@@ -62,7 +62,7 @@ for composer_str in composers:
 
 
 # Create meta-shell script.
-file_name = script_name[:3] + ".sh"
+file_name = script_name[:2] + ".sh"
 file_path = os.path.join(sbatch_dir, file_name)
 
 # Open shell file
@@ -70,14 +70,13 @@ with open(file_path, "w") as f:
     # Print header
     f.write(
         "# This shell script executes Slurm jobs for computing\n" +
-        "# eigenprogression transforms\n" +
-        "# on " + dataset_name + ".\n")
+        "# eigenprogression transforms on " + dataset_name + ".\n")
     f.write("# Composers: " + ", ".join(composers) + ".\n")
     f.write("\n")
 
     # Loop over composers.
     for composer_str in composers:
-        shell_name = "./" + script_name[:3] + "_" + composer_str + ".sh"
+        shell_name = "./" + script_name[:2] + "_" + composer_str + ".sh"
         f.write(shell_name + "\n")
 
     f.write("\n")
