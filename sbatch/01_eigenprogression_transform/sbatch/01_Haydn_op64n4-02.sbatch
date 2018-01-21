@@ -5,7 +5,7 @@
 #SBATCH --tasks-per-node=1
 #SBATCH --cpus-per-task=1
 #SBATCH --time=1:00:00
-#SBATCH --mem=32GB
+#SBATCH --mem=64GB
 #SBATCH --output=../slurm/slurm_01_Haydn_op64n4-02_%j.out
 
 module purge
