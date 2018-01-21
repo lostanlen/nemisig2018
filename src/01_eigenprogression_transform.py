@@ -91,7 +91,7 @@ pianoroll = mtrack_pianoroll.max(axis=2)
 
 # Print elapsed time.
 elapsed_time = time.time() - int(parsing_start_time)
-elapsed_str = "{:>04.2f}".format(elapsed_time)
+elapsed_str = "{:>05.2f}".format(elapsed_time)
 print("Parsing took " + elapsed_str + " seconds.")
 
 
@@ -120,7 +120,7 @@ wavelet_transform = scipy.fftpack.ifft(wavelet_transform_ft, axis=1)
 
 # Print elapsed time.
 elapsed_time = time.time() - int(parsing_start_time)
-elapsed_str = "{:>04.2f}".format(elapsed_time)
+elapsed_str = "{:>05.2f}".format(elapsed_time)
 print("Wavelet transform took " + elapsed_str + " seconds.")
 
 
@@ -166,7 +166,7 @@ eigentriad_transform_modulus = np.abs(eigentriad_transform)
 
 # Print elapsed time.
 elapsed_time = time.time() - int(eigentriad_start_time)
-elapsed_str = "{:>04.2f}".format(elapsed_time)
+elapsed_str = "{:>05.2f}".format(elapsed_time)
 print("Eigentriad transform took " + elapsed_str + " seconds.")
 
 
@@ -205,7 +205,7 @@ scattering_transform = scipy.fftpack.ifft(scattering_transform_ft, axis=3)
 elapsed_time = time.time() - int(scattering_start_time)
 elapsed_minutes = int((elapsed_time % (60 * 60)) / 60)
 elapsed_seconds = elapsed_time % 60.
-elapsed_str = "{:>04.2f}".format(elapsed_time)
+elapsed_str = "{:>05.2f}".format(elapsed_time)
 print("Scattering transform took " + elapsed_str + " seconds.")
 
 
@@ -340,7 +340,7 @@ eigenprogression_transform = scipy.fftpack.ifft(eigenprogression_transform_ft, a
 elapsed_time = time.time() - int(eigenprogression_start_time)
 elapsed_minutes = int((elapsed_time % (60 * 60)) / 60)
 elapsed_seconds = elapsed_time % 60.
-elapsed_str = "{:>02d} minutes and {:>02d} seconds".format(
+elapsed_str = "{:>02d} minutes and {:>05.2f} seconds".format(
     elapsed_minutes, elapsed_seconds)
 print("Eigenprogression transform took " + elapsed_str + ".")
 
@@ -382,7 +382,7 @@ spiral_transform = scipy.fftpack.fft(
 elapsed_time = time.time() - int(spiral_start_time)
 elapsed_minutes = int((elapsed_time % (60 * 60)) / 60)
 elapsed_seconds = elapsed_time % 60.
-elapsed_str = "{:>02d} minutes and {:>02d} seconds".format(
+elapsed_str = "{:>02} minutes and {:>05.2f} seconds".format(
     elapsed_minutes, elapsed_seconds)
 print("Spiral transform took " + elapsed_str + ".")
 
@@ -400,7 +400,7 @@ S2 = np.sum(U2, axis=(0, 1, 2, 3))
 elapsed_time = time.time() - int(modulus_start_time)
 elapsed_minutes = int((elapsed_time % (60 * 60)) / 60)
 elapsed_seconds = elapsed_time % 60.
-elapsed_str = "{:>02d} minutes and {:>02d} seconds".format(
+elapsed_str = "{:>02} minutes and {:>05.2f} seconds".format(
     elapsed_minutes, elapsed_seconds)
 print("Spiral transform took " + elapsed_str + ".")
 
