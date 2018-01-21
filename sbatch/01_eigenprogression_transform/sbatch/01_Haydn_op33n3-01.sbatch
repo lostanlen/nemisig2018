@@ -4,7 +4,7 @@
 #SBATCH --nodes=1
 #SBATCH --tasks-per-node=1
 #SBATCH --cpus-per-task=1
-#SBATCH --time=1:00:00
+#SBATCH --time=0:05:00
 #SBATCH --mem=64GB
 #SBATCH --output=../slurm/slurm_01_Haydn_op33n3-01_%j.out
 
