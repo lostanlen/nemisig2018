@@ -1,0 +1,59 @@
+# This shell script executes Slurm jobs for computing
+# eigenprogression transforms
+# on nemisig2018.
+# Composer: Haydn.
+
+sbatch 01_Haydn_op71n2-04.sbatch
+sbatch 01_Haydn_op33n6-01.sbatch
+sbatch 01_Haydn_op71n1-04.sbatch
+sbatch 01_Haydn_op1n0-04.sbatch
+sbatch 01_Haydn_op50n2-01.sbatch
+sbatch 01_Haydn_op1n0-02.sbatch
+sbatch 01_Haydn_op09n3-04.sbatch
+sbatch 01_Haydn_op71n2-03.sbatch
+sbatch 01_Haydn_op76n4-02.sbatch
+sbatch 01_Haydn_op33n6-02.sbatch
+sbatch 01_Haydn_op20n6-04.sbatch
+sbatch 01_Haydn_op103-02.sbatch
+sbatch 01_Haydn_op20n3-02.sbatch
+sbatch 01_Haydn_op20n6-01.sbatch
+sbatch 01_Haydn_op33n6-04.sbatch
+sbatch 01_Haydn_op71n1-02.sbatch
+sbatch 01_Haydn_op64n4-02.sbatch
+sbatch 01_Haydn_op50n2-02.sbatch
+sbatch 01_Haydn_op20n3-01.sbatch
+sbatch 01_Haydn_op50n2-03.sbatch
+sbatch 01_Haydn_op09n3-01.sbatch
+sbatch 01_Haydn_op50n2-04.sbatch
+sbatch 01_Haydn_op64n4-04.sbatch
+sbatch 01_Haydn_op09n3-02.sbatch
+sbatch 01_Haydn_op76n4-01.sbatch
+sbatch 01_Haydn_op33n3-03.sbatch
+sbatch 01_Haydn_op76n4-04.sbatch
+sbatch 01_Haydn_op1n0-05.sbatch
+sbatch 01_Haydn_op64n1-02.sbatch
+sbatch 01_Haydn_op20n6-03.sbatch
+sbatch 01_Haydn_op50n1-03.sbatch
+sbatch 01_Haydn_op71n1-03.sbatch
+sbatch 01_Haydn_op64n4-01.sbatch
+sbatch 01_Haydn_op64n1-04.sbatch
+sbatch 01_Haydn_op50n1-04.sbatch
+sbatch 01_Haydn_op1n0-01.sbatch
+sbatch 01_Haydn_op64n1-01.sbatch
+sbatch 01_Haydn_op71n2-02.sbatch
+sbatch 01_Haydn_op71n1-01.sbatch
+sbatch 01_Haydn_op64n1-03.sbatch
+sbatch 01_Haydn_op33n3-01.sbatch
+sbatch 01_Haydn_op33n3-04.sbatch
+sbatch 01_Haydn_op76n4-03.sbatch
+sbatch 01_Haydn_op33n3-02.sbatch
+sbatch 01_Haydn_op64n4-03.sbatch
+sbatch 01_Haydn_op103-01.sbatch
+sbatch 01_Haydn_op50n1-01.sbatch
+sbatch 01_Haydn_op50n1-02.sbatch
+sbatch 01_Haydn_op20n3-03.sbatch
+sbatch 01_Haydn_op20n6-02.sbatch
+sbatch 01_Haydn_op09n3-03.sbatch
+sbatch 01_Haydn_op20n3-04.sbatch
+sbatch 01_Haydn_op71n2-01.sbatch
+sbatch 01_Haydn_op33n6-03.sbatch
