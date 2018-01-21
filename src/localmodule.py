@@ -97,14 +97,6 @@ def scatter(U, filterbank, dim):
     return Y
 
 
-def setup_temporal_scattering(J_tm, depth):
-    filterbanks = []
-    for m in range(depth):
-        filterbank = temporal_filterbank(m, J_tm)
-        filterbanks.append(filterbank)
-    return filterbanks
-
-
 def setup_timefrequency_scattering(J_tm, J_fr, depth):
     filterbanks_tm = []
     filterbanks_fr = []
