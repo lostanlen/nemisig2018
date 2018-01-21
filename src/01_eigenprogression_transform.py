@@ -4,6 +4,13 @@ import music21 as m21
 import numpy as np
 import os
 import scipy
+import time
+
+
+# Parse arguments
+args = sys.argv[1:]
+composer_str = args[0]
+track_str = args[1]
 
 
 # Define constants.
@@ -359,14 +366,20 @@ print("Spiral transform took " + elapsed_str + ".")
 
 
 ########################   (6) MODULUS AND AVERAGING  #########################
-
+modulus_start_time = time.time()
 
 # Apply second-order modulus nonlinearity.
 U2 = np.abs(octave_transform)
 
-# Print time spent on parsing.
-elapsed_time = time.time() - int(spiral_start_time)
+# Average over chroma, quality, octave, and time.
+S2 = np.sum(U2, axis=(0, 1, 2, 3))
+
+# Print elapsed time.
+elapsed_time = time.time() - int(modulus_start_time)
 elapsed_minutes = int((elapsed_time % (60 * 60)) / 60)
 elapsed_seconds = elapsed_time % 60.
 elapsed_str = "{:>02} minutes and {>05} seconds"
-print("Spiral transform took " + elapsed_str + ".")
+print("Averaging took " + elapsed_str + ".")
+
+
+###############################   (7) STORAGE  #################################
