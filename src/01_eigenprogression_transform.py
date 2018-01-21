@@ -54,7 +54,7 @@ n_semitones = 12 * n_octaves
 # Loop over parts to extract piano rolls.
 for part_id in range(n_parts):
     part = score.parts[part_id]
-    pianoroll_part = np.zeros((n_semitones, N))
+    pianoroll_part = np.zeros((n_semitones, N), dtype=np.float32)
 
     # Get the measure offsets
     measure_offset = {}
@@ -93,14 +93,13 @@ print("Parsing took " + elapsed_str + " seconds.")
 wavelet_start_time = int(time.time())
 
 # Setup wavelet filter bank over time.
-wavelet_filterbank_ft = np.zeros((1, N, J_tm))
+wavelet_filterbank_ft = np.zeros((1, N, J_tm), dtype=np.float32)
 for j in range(J_tm-1):
     xi_j = xi * 2**(-j)
     sigma_j = sigma * 2**(-j)
     center = xi_j * N
     den = 2 * sigma_j * sigma_j * N * N
     psi_ft = localmodule.morlet(center, den, N, n_periods=4)
-    conj_psi_ft = np.roll(psi_ft, -1)[::-1]
     wavelet_filterbank_ft[0, :, -1 - j] = psi_ft
 
 # Append scaling function phi (average).
@@ -143,6 +142,7 @@ for omega in range(3):
         minor_eigentriads[p, omega] = fourier_basis[t, omega]
 eigentriads = np.stack(
     (major_eigentriads, minor_eigentriads), axis=1)
+eigentriads = eigentriads.astype('float32')
 
 # Convolve chromagram with eigentriads
 chromagram_ft = scipy.fftpack.fft(chromagram, axis=0)
@@ -166,6 +166,19 @@ print("Eigentriad transform took " + elapsed_str + " seconds.")
 #######################   (4) SCATTERING TRANSFORM   ###########################
 # Start clock.
 scattering_start_time = int(time.time())
+
+# Setup scattering filter bank over time.
+scattering_filterbank_ft = np.zeros((1, N, 2*J_tm-1), dtype=np.float32)
+for j in range(J_tm-1):
+    xi_j = xi * 2**(-j)
+    sigma_j = sigma * 2**(-j)
+    center = xi_j * N
+    den = 2 * sigma_j * sigma_j * N * N
+    psi_ft = localmodule.morlet(center, den, N, n_periods=4)
+    conj_psi_ft = np.roll(psi_ft, -1)[::-1]
+    scattering_filterbank_ft[0, :, -1 - 2*j] = psi_ft
+    scattering_filterbank_ft[0, :, -1 - (2*j+1)] = conj_psi_ft
+scattering_filterbank_ft[0, 0, 0] = 1
 
 # Convolve eigentriad transform with filterbank again.
 # This is akin to a scattering transform.
@@ -204,7 +217,7 @@ tonnetz = np.reshape(scattering_transform,
 
 # Build adjacency matrix for Tonnetz graph
 # (1/3) Major to minor transitions.
-major_edges = np.zeros((12,))
+major_edges = np.zeros((12,), dtype=np.float32)
 # Parallel minor (C major to C minor)
 major_edges[0] = 1
 # Relative minor (C major to A minor)
@@ -222,12 +235,12 @@ minor_edges[8] = 1
 # (2/3) Build full adjacency matrix by 4 blocks.
 major_adjacency = scipy.linalg.toeplitz(major_edges, minor_edges)
 minor_adjacency = scipy.linalg.toeplitz(minor_edges, major_edges)
-tonnetz_adjacency = np.zeros((24,24))
+tonnetz_adjacency = np.zeros((24, 24), dtype=np.float32)
 tonnetz_adjacency[:12, 12:] = minor_adjacency
 tonnetz_adjacency[12:, :12] = major_adjacency
 
 # Define Laplacian on the Tonnetz graph.
-tonnetz_laplacian = 3 * np.eye(24) - tonnetz_adjacency
+tonnetz_laplacian = 3 * np.eye(24, dtype=np.float32) - tonnetz_adjacency
 
 # Compute eigenprogressions, i.e. eigenvectors of the Tonnetz Laplacian
 eigvecs, eigvals = np.linalg.eig(tonnetz_laplacian)
@@ -331,7 +344,7 @@ spiral_start_time = int(time.time())
 # Setup wavelet filter bank across octaves.
 # This is comparable to a spiral scattering transform.
 J_oct = 3
-octave_filterbank_ft = np.zeros((n_octaves, 2*J_oct-1))
+octave_filterbank_ft = np.zeros((n_octaves, 2*J_oct-1), dtype=np.float32s)
 for j in range(J_oct-1):
     xi_j = xi * 2**(-j)
     sigma_j = sigma * 2**(-j)
@@ -383,3 +396,36 @@ print("Averaging took " + elapsed_str + ".")
 
 
 ###############################   (7) STORAGE  #################################
+# Store to HDF5 container
+hdf5_name = "_".join([dataset_name, "eigenprogression-transforms"])
+hdf5_dir = os.path.join(data_dir, full_logmelspec_name)
+os.makedirs(hdf5_dir, exist_ok=True)
+composer_dir = os.path.join(hdf5_dir, composter_str)
+os.makedirs(composer_dir, exist_ok=True)
+out_path = os.path.join(composer_dir,
+    "_".join([
+        dataset_name,
+        "eigenprogression-transform",
+        composer_str,
+        track_str + ".hdf5"])
+out_file = h5py.File(out_path)
+hdf5_dataset_size = S2.shape
+hdf5_dataset_key = "_".join([
+    "eigenprogression-transform",
+    composer_str,
+    track_str])
+hdf5_dataset = out_file.create_dataset(hdf5_dataset_key, hdf5_dataset_size)
+hdf5_dataset[:] = S2
+out_file.close()
+
+
+# Print elapsed time.
+print(str(datetime.datetime.now()) + " Finish.")
+elapsed_time = time.time() - int(start_time)
+elapsed_hours = int(elapsed_time / (60 * 60))
+elapsed_minutes = int((elapsed_time % (60 * 60)) / 60)
+elapsed_seconds = elapsed_time % 60.
+elapsed_str = "{:>02}:{:>02}:{:>05.2f}".format(elapsed_hours,
+                                               elapsed_minutes,
+                                               elapsed_seconds)
+print("Total elapsed time: " + elapsed_str + ".")
