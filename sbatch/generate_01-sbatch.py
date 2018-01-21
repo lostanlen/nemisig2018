@@ -38,7 +38,7 @@ for composer_str in composers:
         file_path = os.path.join(sbatch_dir, file_name)
 
         # Define script.
-        script_list = [composer_str, piece_str]
+        script_list = [script_path, composer_str, piece_str]
         script_path_with_args = " ".join(script_list)
 
         # Open file.
