@@ -391,7 +391,7 @@ print("Spiral transform took " + elapsed_str + ".")
 modulus_start_time = time.time()
 
 # Apply second-order modulus nonlinearity.
-U2 = np.abs(octave_transform)
+U2 = np.abs(spiral_transform)
 
 # Average over chroma, quality, octave, and time.
 S2 = np.sum(U2, axis=(0, 1, 2, 3))
@@ -402,7 +402,7 @@ elapsed_minutes = int((elapsed_time % (60 * 60)) / 60)
 elapsed_seconds = elapsed_time % 60.
 elapsed_str = "{:>02} minutes and {:>05.2f} seconds".format(
     elapsed_minutes, elapsed_seconds)
-print("Spiral transform took " + elapsed_str + ".")
+print("Averaging took " + elapsed_str + ".")
 
 
 ###############################   (7) STORAGE  #################################
