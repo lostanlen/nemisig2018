@@ -1,0 +1,21 @@
+../../../src/01_eigenprogression_transform.py:85: Music21DeprecationWarning: Note._getMidi was deprecated on May 2014 and will disappear at or after May 2016. use pitch.midi instead
+  note_start:note_end] = 1
+2018-01-21 23:39:52.743908 Start.
+Eigenprogression transform.
+Composer: Mozart.
+Piece: k136_1.
+
+h5py version: 2.6.0
+music21 version: 3.1.0
+numpy version: 1.13.1
+scipy version: 0.19.1
+
+Parsing took 02.52 seconds.
+Wavelet transform took 03.06 seconds.
+Eigentriad transform took 00.19 seconds.
+Scattering transform took 01.51 seconds.
+Eigenprogression transform took 08.53 seconds.
+Spiral transform took 56.13 seconds.
+Averaging took 15.86 seconds.
+2018-01-21 23:41:15.866134 Finish.
+Total elapsed time: 00:01:23.87.

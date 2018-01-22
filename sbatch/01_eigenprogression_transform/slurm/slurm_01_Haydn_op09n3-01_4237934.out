@@ -1,0 +1,32 @@
+../../../src/01_eigenprogression_transform.py:85: Music21DeprecationWarning: Note._getMidi was deprecated on May 2014 and will disappear at or after May 2016. use pitch.midi instead
+  note_start:note_end] = 1
+2018-01-21 23:24:46.715256 Start.
+Eigenprogression transform.
+Composer: Haydn.
+Piece: op09n3-01.
+
+h5py version: 2.6.0
+music21 version: 3.1.0
+numpy version: 1.13.1
+scipy version: 0.19.1
+
+Parsing took 02.24 seconds.
+Wavelet transform took 02.63 seconds.
+Eigentriad transform took 00.75 seconds.
+Scattering transform took 01.92 seconds.
+Eigenprogression transform took 09.35 seconds.
+Spiral transform took 52.56 seconds.
+Averaging took 15.58 seconds.
+Traceback (most recent call last):
+  File "../../../src/01_eigenprogression_transform.py", line 416, in <module>
+    hdf5_dataset = out_file.create_dataset(hdf5_dataset_key, hdf5_dataset_size)
+  File "/home/vl1019/miniconda3/lib/python3.6/site-packages/h5py/_hl/group.py", line 108, in create_dataset
+    self[name] = dset
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper (/tmp/pip-tnf92dft-build/h5py/_objects.c:2853)
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper (/tmp/pip-tnf92dft-build/h5py/_objects.c:2811)
+  File "/home/vl1019/miniconda3/lib/python3.6/site-packages/h5py/_hl/group.py", line 277, in __setitem__
+    h5o.link(obj.id, self.id, name, lcpl=lcpl, lapl=self._lapl)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper (/tmp/pip-tnf92dft-build/h5py/_objects.c:2853)
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper (/tmp/pip-tnf92dft-build/h5py/_objects.c:2811)
+  File "h5py/h5o.pyx", line 202, in h5py.h5o.link (/tmp/pip-tnf92dft-build/h5py/h5o.c:3900)
+RuntimeError: Unable to create link (Name already exists)

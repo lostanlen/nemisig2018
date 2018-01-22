@@ -1,0 +1,21 @@
+../../../src/01_eigenprogression_transform.py:85: Music21DeprecationWarning: Note._getMidi was deprecated on May 2014 and will disappear at or after May 2016. use pitch.midi instead
+  note_start:note_end] = 1
+2018-01-21 23:29:50.201184 Start.
+Eigenprogression transform.
+Composer: Haydn.
+Piece: op50n1-01.
+
+h5py version: 2.6.0
+music21 version: 3.1.0
+numpy version: 1.13.1
+scipy version: 0.19.1
+
+Parsing took 05.04 seconds.
+Wavelet transform took 05.43 seconds.
+Eigentriad transform took 00.55 seconds.
+Scattering transform took 01.72 seconds.
+Eigenprogression transform took 08.90 seconds.
+Spiral transform took 52.86 seconds.
+Averaging took 15.70 seconds.
+2018-01-21 23:31:11.709188 Finish.
+Total elapsed time: 00:01:21.71.
