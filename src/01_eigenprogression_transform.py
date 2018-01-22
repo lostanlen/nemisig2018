@@ -203,8 +203,6 @@ scattering_transform = scipy.fftpack.ifft(scattering_transform_ft, axis=3)
 
 # Print elapsed time.
 elapsed_time = time.time() - int(scattering_start_time)
-elapsed_minutes = int((elapsed_time % (60 * 60)) / 60)
-elapsed_seconds = elapsed_time % 60.
 elapsed_str = "{:>05.2f}".format(elapsed_time)
 print("Scattering transform took " + elapsed_str + " seconds.")
 
@@ -338,11 +336,8 @@ eigenprogression_transform = scipy.fftpack.ifft(eigenprogression_transform_ft, a
 
 # Print elapsed time.
 elapsed_time = time.time() - int(eigenprogression_start_time)
-elapsed_minutes = int((elapsed_time % (60 * 60)) / 60)
-elapsed_seconds = elapsed_time % 60.
-elapsed_str = "{:>02d} minutes and {:>05.2f} seconds".format(
-    elapsed_minutes, elapsed_seconds)
-print("Eigenprogression transform took " + elapsed_str + ".")
+elapsed_str = "{:>05.2f}".format(elapsed_time)
+print("Eigenprogression transform took " + elapsed_str + " seconds.")
 
 
 ######################   (5) SPIRAL TRANSFORM   ######################
@@ -380,11 +375,8 @@ spiral_transform = scipy.fftpack.fft(
 
 # Print elapsed time.
 elapsed_time = time.time() - int(spiral_start_time)
-elapsed_minutes = int((elapsed_time % (60 * 60)) / 60)
-elapsed_seconds = elapsed_time % 60.
-elapsed_str = "{:>02} minutes and {:>05.2f} seconds".format(
-    elapsed_minutes, elapsed_seconds)
-print("Spiral transform took " + elapsed_str + ".")
+elapsed_str = "{:>05.2f}".format(elapsed_time)
+print("Spiral transform took " + elapsed_str + " seconds.")
 
 
 ########################   (6) MODULUS AND AVERAGING  #########################
@@ -398,17 +390,14 @@ S2 = np.sum(U2, axis=(0, 1, 2, 3))
 
 # Print elapsed time.
 elapsed_time = time.time() - int(modulus_start_time)
-elapsed_minutes = int((elapsed_time % (60 * 60)) / 60)
-elapsed_seconds = elapsed_time % 60.
-elapsed_str = "{:>02} minutes and {:>05.2f} seconds".format(
-    elapsed_minutes, elapsed_seconds)
-print("Averaging took " + elapsed_str + ".")
+elapsed_str = "{:>05.2f}".format(elapsed_time)
+print("Averaging took " + elapsed_str + " seconds.")
 
 
 ###############################   (7) STORAGE  #################################
 # Store to HDF5 container
 hdf5_name = "_".join([dataset_name, "eigenprogression-transforms"])
-hdf5_dir = os.path.join(data_dir, full_logmelspec_name)
+hdf5_dir = os.path.join(data_dir, hdf5_name)
 os.makedirs(hdf5_dir, exist_ok=True)
 composer_dir = os.path.join(hdf5_dir, composter_str)
 os.makedirs(composer_dir, exist_ok=True)
