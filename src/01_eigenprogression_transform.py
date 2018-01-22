@@ -399,7 +399,7 @@ print("Averaging took " + elapsed_str + " seconds.")
 hdf5_name = "_".join([dataset_name, "eigenprogression-transforms"])
 hdf5_dir = os.path.join(data_dir, hdf5_name)
 os.makedirs(hdf5_dir, exist_ok=True)
-composer_dir = os.path.join(hdf5_dir, composter_str)
+composer_dir = os.path.join(hdf5_dir, composer_str)
 os.makedirs(composer_dir, exist_ok=True)
 out_path = os.path.join(composer_dir,
     "_".join([
