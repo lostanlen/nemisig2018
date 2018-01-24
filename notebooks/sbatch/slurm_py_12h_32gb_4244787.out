@@ -1,0 +1,88 @@
+
+Jupyter server is running on: c41-12
+Job starts at: Tue Jan 23 12:45:16 EST 2018
+
+Step 1 :
+
+If you are working in NYU campus, please open an iTerm window, run command
+
+ssh -L 9109:localhost:9109 vl1019@prince.hpc.nyu.edu
+
+If you are working off campus, you should already have ssh tunneling setup through HPC bastion host,
+that you can directly login to prince with command
+
+ssh vl1019@prince
+
+Please open an iTerm window, run command
+
+ssh -L 9109:localhost:9109 vl1019@prince
+
+Step 2:
+
+Keep the iTerm windows in the previouse step open. Now open browser, find the line with
+
+The Jupyter Notebook is running at:
+
+the URL is something: http://localhost:/?token=XXXXXXXX
+
+you should be able to connect to jupyter notebook running remotly on prince compute node with above url
+
+[I 12:45:19.982 NotebookApp] Writing notebook server cookie secret to /state/partition1/job-4244787/jupyter/notebook_cookie_secret
+[I 12:45:21.006 NotebookApp] Serving notebooks from local directory: /home/vl1019
+[I 12:45:21.006 NotebookApp] 0 active kernels 
+[I 12:45:21.006 NotebookApp] The Jupyter Notebook is running at: http://localhost:9109/?token=308310078ea532e5595599cd23e7be1e5b58f49624e0a869
+[I 12:45:21.006 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 12:45:21.006 NotebookApp] 
+    
+    Copy/paste this URL into your browser when you connect for the first time,
+    to login with a token:
+        http://localhost:9109/?token=308310078ea532e5595599cd23e7be1e5b58f49624e0a869
+[I 19:12:52.636 NotebookApp] 302 GET /?token=308310078ea532e5595599cd23e7be1e5b58f49624e0a869 (::1) 0.77ms
+[W 19:14:04.164 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js (::1) 18.64ms referer=http://localhost:9109/notebooks/BirdVox-70k_icassp2018/spl2018/fig_binary-classification.ipynb
+[I 19:14:04.827 NotebookApp] Kernel started: 5256baf7-725e-4527-a650-7885822726d0
+[I 19:16:04.796 NotebookApp] Saving file at /BirdVox-70k_icassp2018/spl2018/fig_binary-classification.ipynb
+[I 19:18:04.791 NotebookApp] Saving file at /BirdVox-70k_icassp2018/spl2018/fig_binary-classification.ipynb
+[I 19:20:04.784 NotebookApp] Saving file at /BirdVox-70k_icassp2018/spl2018/fig_binary-classification.ipynb
+[I 19:22:04.784 NotebookApp] Saving file at /BirdVox-70k_icassp2018/spl2018/fig_binary-classification.ipynb
+[I 19:24:04.808 NotebookApp] Saving file at /BirdVox-70k_icassp2018/spl2018/fig_binary-classification.ipynb
+[I 19:26:04.818 NotebookApp] Saving file at /BirdVox-70k_icassp2018/spl2018/fig_binary-classification.ipynb
+[I 19:28:04.818 NotebookApp] Saving file at /BirdVox-70k_icassp2018/spl2018/fig_binary-classification.ipynb
+[I 19:56:01.993 NotebookApp] Saving file at /BirdVox-70k_icassp2018/spl2018/fig_binary-classification.ipynb
+[I 19:56:15.827 NotebookApp] Saving file at /BirdVox-70k_icassp2018/spl2018/fig_binary-classification.ipynb
+[I 19:58:39.870 NotebookApp] Saving file at /BirdVox-70k_icassp2018/spl2018/fig_binary-classification.ipynb
+[W 19:58:46.045 NotebookApp] Notebook BirdVox-70k_icassp2018/spl2018/fig_precision-recall.ipynb is not trusted
+[I 19:58:47.484 NotebookApp] Kernel started: 9908acb0-bc28-44eb-8050-1af7b198f700
+[W 19:58:47.496 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js (::1) 1.97ms referer=http://localhost:9109/notebooks/BirdVox-70k_icassp2018/spl2018/fig_precision-recall.ipynb
+[I 20:02:04.941 NotebookApp] Saving file at /BirdVox-70k_icassp2018/spl2018/fig_binary-classification.ipynb
+[I 20:04:05.023 NotebookApp] Saving file at /BirdVox-70k_icassp2018/spl2018/fig_binary-classification.ipynb
+[I 20:06:04.934 NotebookApp] Saving file at /BirdVox-70k_icassp2018/spl2018/fig_binary-classification.ipynb
+[I 20:08:04.941 NotebookApp] Saving file at /BirdVox-70k_icassp2018/spl2018/fig_binary-classification.ipynb
+[I 20:10:05.001 NotebookApp] Saving file at /BirdVox-70k_icassp2018/spl2018/fig_binary-classification.ipynb
+[I 20:12:04.963 NotebookApp] Saving file at /BirdVox-70k_icassp2018/spl2018/fig_binary-classification.ipynb
+[I 20:14:04.977 NotebookApp] Saving file at /BirdVox-70k_icassp2018/spl2018/fig_binary-classification.ipynb
+[I 20:18:04.967 NotebookApp] Saving file at /BirdVox-70k_icassp2018/spl2018/fig_binary-classification.ipynb
+[I 20:20:05.004 NotebookApp] Saving file at /BirdVox-70k_icassp2018/spl2018/fig_binary-classification.ipynb
+[I 20:22:04.983 NotebookApp] Saving file at /BirdVox-70k_icassp2018/spl2018/fig_binary-classification.ipynb
+[I 20:23:44.943 NotebookApp] Saving file at /BirdVox-70k_icassp2018/spl2018/fig_binary-classification.ipynb
+[I 20:26:05.003 NotebookApp] Saving file at /BirdVox-70k_icassp2018/spl2018/fig_binary-classification.ipynb
+[I 20:28:05.029 NotebookApp] Saving file at /BirdVox-70k_icassp2018/spl2018/fig_binary-classification.ipynb
+[I 20:30:05.012 NotebookApp] Saving file at /BirdVox-70k_icassp2018/spl2018/fig_binary-classification.ipynb
+[I 20:32:05.038 NotebookApp] Saving file at /BirdVox-70k_icassp2018/spl2018/fig_binary-classification.ipynb
+[I 20:34:05.033 NotebookApp] Saving file at /BirdVox-70k_icassp2018/spl2018/fig_binary-classification.ipynb
+[I 20:36:05.030 NotebookApp] Saving file at /BirdVox-70k_icassp2018/spl2018/fig_binary-classification.ipynb
+[I 20:38:05.034 NotebookApp] Saving file at /BirdVox-70k_icassp2018/spl2018/fig_binary-classification.ipynb
+[I 20:40:05.035 NotebookApp] Saving file at /BirdVox-70k_icassp2018/spl2018/fig_binary-classification.ipynb
+[I 20:42:05.051 NotebookApp] Saving file at /BirdVox-70k_icassp2018/spl2018/fig_binary-classification.ipynb
+[I 20:43:04.321 NotebookApp] Saving file at /BirdVox-70k_icassp2018/spl2018/fig_binary-classification.ipynb
+[I 20:43:06.636 NotebookApp] Kernel restarted: 5256baf7-725e-4527-a650-7885822726d0
+[I 20:44:05.046 NotebookApp] Saving file at /BirdVox-70k_icassp2018/spl2018/fig_binary-classification.ipynb
+[I 20:46:05.074 NotebookApp] Saving file at /BirdVox-70k_icassp2018/spl2018/fig_binary-classification.ipynb
+[I 20:48:05.144 NotebookApp] Saving file at /BirdVox-70k_icassp2018/spl2018/fig_binary-classification.ipynb
+[I 20:50:05.150 NotebookApp] Saving file at /BirdVox-70k_icassp2018/spl2018/fig_binary-classification.ipynb
+[I 20:52:05.147 NotebookApp] Saving file at /BirdVox-70k_icassp2018/spl2018/fig_binary-classification.ipynb
+[I 20:52:48.508 NotebookApp] Saving file at /BirdVox-70k_icassp2018/spl2018/fig_binary-classification.ipynb
+[W 21:15:48.442 NotebookApp] WebSocket ping timeout after 119993 ms.
+[W 21:16:07.735 NotebookApp] WebSocket ping timeout after 119957 ms.
+[W 21:23:41.557 NotebookApp] WebSocket ping timeout after 119780 ms.
+[W 21:23:41.766 NotebookApp] WebSocket ping timeout after 119989 ms.
+slurmstepd: error: *** JOB 4244787 ON c41-12 CANCELLED AT 2018-01-24T00:45:36 DUE TO TIME LIMIT ***
